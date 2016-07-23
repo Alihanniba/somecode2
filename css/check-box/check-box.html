@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>check-box 自定义样式</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="" rel="stylesheet">
+    <style>
+    /* checkbox style */
+    .regular-checkbox {
+        display: none;
+    }
+    .regular-checkbox + label {
+        background-color: #ccc;
+        padding: 7px;
+        border-radius: 3px;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 3px;
+        text-indent: 0;
+    }
+    .regular-checkbox.check-half + label {
+        opacity: 0.5;
+    }
+    .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+    .regular-checkbox:checked + label {
+        background-color: #007aff;
+        color: #fff;
+    }
+    .regular-checkbox:checked + label:after {
+        font-family: FontAwesome;
+        content: '\f00c';
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    .checkbox-inline {
+        margin-left: 60px;
+    }
+    .checkbox-inline:first-child {
+        margin-left: 0;
+    }
+    .checkbox-inline .regular-checkbox + label,
+    .checkbox-inline .checkbox-name {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="check-box">
+        <div class="">
+            <input type="checkbox" name="checkbox" id="share-scene" class="regular-checkbox" value="1">
+            <label for="share-scene"></label>
+            <span>alihanniba</span>
+        </div>
+        <div class="">
+            <input type="checkbox" name="checkbox" id="message-manage" class="regular-checkbox" value="2">
+            <label for="message-manage"></label>
+            <span>github</span>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>
