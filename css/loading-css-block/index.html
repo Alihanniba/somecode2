@@ -12,12 +12,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link href="" rel="stylesheet">
     <style>
-        @-webkit-keyframes sk-stretchdelay {
+        @-webkit-keyframes wave {
             0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
             20% { -webkit-transform: scaleY(1.0) }
         }
 
-        @keyframes sk-stretchdelay {
+        @keyframes wave {
             0%, 40%, 100% {
                 transform: scaleY(0.4);
                 -webkit-transform: scaleY(0.4);
@@ -28,20 +28,21 @@
         }
 
         .spinner {
-            height: 100px;
+            height: 200px;
             text-align: center;
             font-size: 10px;
+            margin-top: 200px;
         }
 
         .spinner > div {
-            background-color: rgba(166, 210, 165, 0.9);
+            background-color: #6799ff;
             height: 100%;
             width: 7px;
             margin: 0 3px 0 0;
             display: inline-block;
 
-            -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-            animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            -webkit-animation: wave 1.2s infinite ease-in-out;
+            animation: wave 1.2s infinite ease-in-out;
         }
 
         .spinner .rect2 {
