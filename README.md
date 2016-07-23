@@ -14,7 +14,8 @@
 ___
 
 ##CSS
-* [loading status](./css/loading-block/loading-block.html)
+* [loading-gif-status](./css/loading-gif-block/loading-block.html)
+* [loading-css-status/音效波浪](./css/loading-css-block/index.html)
 
 ___
 

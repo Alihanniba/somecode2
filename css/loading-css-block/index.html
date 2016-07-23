@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>www.alihanniba.com</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="" rel="stylesheet">
+    <style>
+        @-webkit-keyframes sk-stretchdelay {
+            0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+            20% { -webkit-transform: scaleY(1.0) }
+        }
+
+        @keyframes sk-stretchdelay {
+            0%, 40%, 100% {
+                transform: scaleY(0.4);
+                -webkit-transform: scaleY(0.4);
+            }  20% {
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+
+        .spinner {
+            height: 100px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .spinner > div {
+            background-color: rgba(166, 210, 165, 0.9);
+            height: 100%;
+            width: 7px;
+            margin: 0 3px 0 0;
+            display: inline-block;
+
+            -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        }
+
+        .spinner .rect2 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+
+        .spinner .rect3 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        .spinner .rect4 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .spinner .rect5 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>
