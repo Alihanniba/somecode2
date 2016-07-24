@@ -1,6 +1,6 @@
 # personal-code-block
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alihanniba/personal-code-block) ![](https://img.shields.io/badge/%20%20Shell-%20%20%20%203,744-89e051.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![](https://img.shields.io/badge/%20%20Shell-%20%20%20%203,744-89e051.svg)
 ![build](https://img.shields.io/wercker/ci/wercker/docs.svg)
 
 
