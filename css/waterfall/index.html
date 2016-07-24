@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CSS3实现瀑布流效果</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="" rel="stylesheet">
+    <style>
+        *{
+            padding:0;margin:0
+        }
+
+        #container{
+            width:980px;
+            margin:60px auto;
+            border-radius:25px;
+            box-shadow:5px 5px 10px #6799ff;
+            padding:20px;
+            -moz-column-count:4;
+            -moz-column-gap:30px;
+            -moz-column-rule:0px solid #ff0000;
+        	-webkit-column-count:4;
+            -webkit-column-gap:30px;
+            -webkit-column-rule:0px solid #ff0000;
+        	-o-column-count:4;
+            -o-column-gap:30px;
+            -o-column-rule:0px solid #ff0000;
+        }
+
+        #container .figure-one{
+            width:188px;
+            min-height:100px;
+            box-shadow:2px 2px 6px #6799ff;
+            padding:20px 15px;
+            margin:10px;
+            display:inline-block
+        }
+
+        #container .figure-one > img {
+            width: 188px;
+        }
+
+        #container h3{
+            border-bottom:1px solid #ddd;
+            line-height:30px;
+            text-align:center;
+            padding:5px 5px;
+        }
+        #container h3 a{
+            text-decoration:none;
+            color:#999;
+        }
+        #container  p{
+            font-size:12px;
+            color:#666;
+            line-height:20px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            -o-text-overflow:ellipsis;
+            -icab-text-overflow: ellipsis;
+            -khtml-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="figure-one">
+        <img src="./baby.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./babyface.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./babyq.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./lanlan5.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./lanlan7.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./web.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./tree.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+    <div class="figure-one">
+        <img src="./socool.jpg" />
+        <h3><a href="http://www.alihanniba.com/">斯诺克女神</a></h3>
+        <p>你是我的小丫小苹果,怎么爱你都不嫌多</p>
+    </div>
+</div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>
