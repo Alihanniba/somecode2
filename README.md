@@ -15,15 +15,24 @@ ___
 
 ##CSS
 * **[loading-gif-status](./css/loading-gif-block/loading-block.html)**
+
 	![](./img/loading-gif.gif)
+	
 * **[loading-css-status/音效波浪](./css/loading-css-block/index.html)**
+
 	![](./img/loading-css.gif)
+	
 * **[自定义 checkbox](./css/check-box/check-box.html)**
+
 	![](./img/checkbox.gif)
+	
 * **[CSS3实现瀑布流效果](./css/waterfall/index.html)**
+
 	![](./img/waterFall.png)
 	![](./img/snooke.gif)
 	
+* **[初始化CSS](./css/reset/reset.css)**
+
 
 
 
@@ -37,4 +46,3 @@ ___
 
 ___
 ![](./img/alihanniba.png)
-
