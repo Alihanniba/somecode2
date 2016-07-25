@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot');
+  src: url("fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'),
+     url("fonts/fontawesome-webfont.woff") format('woff'),
+     url("fonts/fontawesome-webfont.ttf") format('truetype'),
+     url("fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
+  font-style: normal;font-weight: normal;}
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr { margin: 0; padding: 0 }
+button,input,textarea,span,section,img,a{
+    outline:none;
+    -webkit-transition:all 0.30s ease-in-out;
+    -moz-transition:all 0.30s ease-in-out;
+    transition:all 0.30s ease-in-out;
+}
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+*:before,*:after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+    display:block;
+}
+audio,canvas,progress,video{
+    display:inline-block;
+    vertical-align:baseline;
+}
+address,cite,dfn,em,var,i{
+    font-style:normal;
+} /* 将斜体扶正 */
+code,kbd,pre,samp,tt{
+    font-family:"Courier New", Courier, monospace;
+} /* 统一等宽字体 */
+small{
+    font-size:12px;
+}
+html{
+    font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif;
+}
+html,body{
+    height: 100%;
+    background-color: #374256;
+}
+body{
+    color:#666;
+    font-size:14px;
+    text-rendering:optimizeLegibility; /* 文本渲染:浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度.它会使字间距和连字有效。该属性值在移动设备上会造成比较明显的性能问题 */
+}
+.windows{
+    font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif;
+}
+.windows input,.windows button,.windows textarea,.windows select{
+  font-family: Helvetica, Arial, "Microsoft YaHei", sans-serif;
+}
+.mac{
+    font-family: "Hiragino Sans GB","Helvetica Neue", Helvetica, Arial,"Microsoft YaHei", sans-serif;
+}
+.mac input,.mac button,.mac textarea,.mac select{
+  font-family: "Hiragino Sans GB","Helvetica Neue", Helvetica, Arial,"Microsoft YaHei", sans-serif;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    cursor:pointer;
+    text-decoration:none;
+    color:#666;
+}
+a:hover{
+    color:#007aff;
+    text-decoration:none;
+}
+img {
+    vertical-align: middle;
+}
+::selection{
+    background:#007aff;
+    color:#fff;
+    text-shadow:none;
+}
+::-webkit-selection{
+    background:#007aff;
+    color:#fff;
+    text-shadow:none;
+}
+::-moz-selection{
+    background:#007aff;
+    color:#fff;
+    text-shadow:none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+
+.fa {
+    font-family: FontAwesome;
+}
+.fa-search:before {
+    content: "\f002";
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+}
+.fa-play-circle-o:before {
+    content: "\f01d";
+}
+.fa-arrow-down:before {
+    content: "\f063";
+}
+.fa-plus:before {
+    content: "\f067";
+}
+.fa-sign-out:before {
+    content: "\f08b";
+}
+.fa-square-o:before {
+    content: "\f096";
+}
+.fa-angle-left:before {
+    content: "\f104";
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+.fa-angle-down:before {
+    content: "\f107";
+}
+.fa-minus-square-o:before {
+    content: "\f147";
+}
+.fa-plus-square-o:before {
+    content: "\f196";
+}
+.fa-pause-circle-o:before {
+    content: "\f28c";
+}
+.fa-pencil:before{
+    content: "\f040";
+}
+.fa-trash:before{
+    content: "\f1f8";
+}
+.fa-eye:before{
+    content: "\f06e";
+}
+.fa-cny:before{
+    content: "\f157";
+}
+.fa-eye:before {
+    content: "\f06e";
+}
