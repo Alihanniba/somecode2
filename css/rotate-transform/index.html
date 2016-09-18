@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>www.alihanniba.com</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="csrf-token" content=""/>
+    <meta name="author" content="alihanniba">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            border-radius: 0 0 0 30px;
+        }
+        /*
+        display:flex弹性布局,允许在容器里弹性伸缩,
+        align-items:center根据页面宽高有弹性的垂直居中,
+        justify-content: center随着页面宽高有弹性的水平居中,
+        height:100vh界面实际高度有多高body的高度就有多高
+         */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #333;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            -webkit-animation: loader 2s ease-in-out infinite;
+        }
+        .loader span {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 4px solid #6799ff;
+        }
+        .loader:before {
+            content: "";
+            display: block;
+            background: #282e3a;
+            width: 30px;
+            height: 30px;
+            margin: 10px auto;
+            border-radius: 30px 30px 30px 30px;
+            -webkit-animation: beforeAnimation 2s infinite;
+        }
+        .loader span:nth-child(1) {
+            -webkit-animation: span1 2s ease-in-out infinite;
+        }
+        .loader span:nth-child(2) {
+            -webkit-animation: span2 2s ease-in-out infinite;
+        }
+        .loader span:nth-child(3) {
+            -webkit-animation: span3 2s ease-in-out infinite;
+        }
+        .loader span:nth-child(4) {
+            -webkit-animation: span4 2s ease-in-out infinite;
+        }
+        @-webkit-keyframes span1 {
+            0% {
+                -webkit-transform: translate(0,0);
+            }
+            50% {
+                -webkit-transform: translate(-50px, 0);
+                border-color: red;
+            }
+            100% {
+                -webkit-transform:translate(0,0);
+            }
+        }
+        @-webkit-keyframes span2 {
+            0% {
+                -webkit-transform: translate(0);
+            }
+            50% {
+                -webkit-transform: translate(50px, 0);
+                border-color: #33ee22;
+            }
+            100% {
+                -webkit-transform:translate(0);
+            }
+        }
+        @-webkit-keyframes span3 {
+            0% {
+                -webkit-transform: translate(0);
+            }
+            50% {
+                -webkit-transform: translate(0, 50px);
+                border-color: #efdd33;
+            }
+            100% {
+                -webkit-transform:translate(0);
+            }
+        }
+        @-webkit-keyframes span4 {
+            0% {
+                -webkit-transform: translate(0);
+            }
+            50% {
+                -webkit-transform: translate(0, -50px);
+                border-color: #888888;
+            }
+            100% {
+                -webkit-transform:translate(0);
+            }
+        }
+        @-webkit-keyframes loader {
+            0% {
+                -webkit-transform: rotate(-45deg);
+            }
+            50% {
+                -webkit-transform: rotate(145deg);
+            }
+            100% {
+                -webkit-transform: rotate(-45deg);
+            }
+        }
+        @-webkit-keyframes beforeAnimation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                background: blue;
+            }
+            50% {
+                -webkit-transform: rotate(180deg);
+                background: white;
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
