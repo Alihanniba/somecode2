@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible', content='IE=edge,chrome=1' />
+	<meta name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+    <title>关于手机硬件加速与position:fixed和监听window滑动事件的坑</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+            background: #333;
+        }
+
+        h1 {
+            background: #999;
+        }
+
+        header, h1 {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        banner {
+            display: block;
+            height: 300px;
+            width: 100%;
+            background: url(https://share.alihanniba.com/mac/2016-10-27-22%3A21%3A24.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        /*main {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }*/
+    </style>
+</head>
+<body>
+    <header>这是导航,当页面滑动时需要固定在顶部</header>
+    <banner></banner>
+    <main>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+        <h1>为了效果,这是展示内容</h1>
+    </main>
+</body>
+</html>
