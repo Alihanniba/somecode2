@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转木马效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stage {
+            perspective: 800px;
+        }
+
+        .container {
+            transform-style: preserve-3d;
+        }
+
+        .container img {
+            position: absolute;
+            height: 200px;
+            width: 300px;
+        }
+
+        img:nth-child(1) {
+            transform: rotateY(0deg) translateZ(180px);
+        }
+
+        img:nth-child(2) {
+            transform: rotateY(36deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(3) {
+            transform: rotateY(72deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(4) {
+            transform: rotateY(108deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(5) {
+            transform: rotateY(144deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(6) {
+            transform: rotateY(180deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(7) {
+            transform: rotateY(216deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(8) {
+            transform: rotateY(252deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(9) {
+            transform: rotateY(288deg) translateZ(180px);
+            
+        }
+
+        img:nth-child(10) {
+            transform: rotateY(224deg) translateZ(180px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="container">
+            <img src="./img/1.jpg" alt="">
+            <img src="./img/2.jpg" alt="">
+            <img src="./img/3.jpg" alt="">
+            <img src="./img/4.jpg" alt="">
+            <img src="./img/5.jpg" alt="">
+            <img src="./img/6.jpg" alt="">
+            <img src="./img/7.jpg" alt="">
+            <img src="./img/8.jpg" alt="">
+            <img src="./img/9.jpg" alt="">
+            <img src="./img/10.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
